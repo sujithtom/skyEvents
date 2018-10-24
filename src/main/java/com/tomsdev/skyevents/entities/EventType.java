@@ -12,4 +12,13 @@ import javax.persistence.Id;
 public class EventType {
     private @Id @GeneratedValue long id;
     private String eventType;
+
+    @Override
+    public String toString() {
+        return eventType;
+    }
+
+    public EventType(String eventType) {
+        this.eventType = eventType;
+    }
 }
