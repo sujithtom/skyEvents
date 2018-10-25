@@ -12,4 +12,13 @@ import javax.persistence.Id;
 public class Location {
     private @Id @GeneratedValue long id;
     private String locationName;
+
+    public Location(String locationName) {
+        this.locationName = locationName;
+    }
+
+    @Override
+    public String toString() {
+        return locationName;
+    }
 }
