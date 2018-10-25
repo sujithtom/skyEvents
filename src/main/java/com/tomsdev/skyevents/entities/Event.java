@@ -21,7 +21,7 @@ public class Event {
     private Date eventEndDate;
     private String eventImage;
     private List<EventType> eventTypes;
-    private List<Location> visibleFromLocation;
+    private List<Location> visibleFromLocation; // TODO: introduce this later
 
     @Override
     public String toString() {
@@ -32,7 +32,7 @@ public class Event {
                 ", eventStartDate=" + eventStartDate +
                 ", eventEndDate=" + eventEndDate +
                 ", eventTypes= { " + eventTypes.stream().map(EventType::toString).collect(Collectors.joining(", ")) + " }" +
-                ", visibleFromLocation= { " + visibleFromLocation.stream().map(Location::toString).collect(Collectors.joining(", ")) + " }" +
+                // ", visibleFromLocation= { " + visibleFromLocation.stream().map(Location::toString).collect(Collectors.joining(", ")) + " }" +
                 '}';
     }
 
@@ -46,5 +46,16 @@ public class Event {
         this.eventImage = eventImage;
         this.eventTypes = eventTypes;
         this.visibleFromLocation = visibleFromLocation;
+    }
+
+    public Event(String eventName, String eventDescription, String eventShortDescription, Date eventStartDate, Date eventEndDate,
+                 String eventImage, List<EventType> eventTypes) {
+        this.eventName = eventName;
+        this.eventDescription = eventDescription;
+        this.eventShortDescription = eventShortDescription;
+        this.eventStartDate = eventStartDate;
+        this.eventEndDate = eventEndDate;
+        this.eventImage = eventImage;
+        this.eventTypes = eventTypes;
     }
 }
