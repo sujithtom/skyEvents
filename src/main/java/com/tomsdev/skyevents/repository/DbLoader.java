@@ -23,11 +23,11 @@ public class DbLoader implements CommandLineRunner {
 
     @Override
     public void run(String... strings) {
-        ObjectMapper mapper = new ObjectMapper();
         TypeReference<List<Event>> eventsType = new TypeReference<List<Event>>() {};
-        InputStream is = TypeReference.class.getResourceAsStream("/json/sampleData.json");
+        // InputStream is = TypeReference.class.getResourceAsStream("/json/sampleData.json");
+        InputStream is = TypeReference.class.getResourceAsStream("/json/sampleDataSimplified.json");
         try {
-            List<Event> events = mapper.readValue(is, eventsType);
+            List<Event> events = new ObjectMapper().readValue(is, eventsType);
             for (Event event:events) {
                 repository.save(event);
             }

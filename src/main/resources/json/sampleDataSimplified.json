@@ -1,0 +1,18 @@
+[
+    {
+      "eventName": "Taurids Meteor Shower",
+      "eventDescription": "The Taurids are an annual meteor shower, associated with the comet Encke. The Taurids are actually two separate showers, with a Southern and a Northern component. The Southern Taurids originated from Comet Encke, while the Northern Taurids originated from the asteroid 2004 TG10. They are named after their radiant point in the constellation Taurus, where they are seen to come from in the sky. Because of their occurrence in late October and early November, they are also called Halloween fireballs.",
+      "eventShortDescription": "The Taurids are an annual meteor shower, associated with the comet Encke.",
+      "eventStartDate": "2018-05-10T23:00:00.000Z",
+      "eventEndDate": "2018-06-10T23:00:00.000Z",
+      "eventImage": "http://image.url/image.jpg"
+    },
+    {
+      "eventName": "Full Moon",
+      "eventDescription": "The moon is quite full today",
+      "eventShortDescription": "Moon Full",
+      "eventStartDate": "2018-05-10T23:00:00.000Z",
+      "eventEndDate": "2018-06-10T23:00:00.000Z",
+      "eventImage": "http://image.url/image.jpg"
+    }
+  ]

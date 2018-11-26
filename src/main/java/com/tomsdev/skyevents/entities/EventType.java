@@ -1,5 +1,6 @@
 package com.tomsdev.skyevents.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -12,4 +13,16 @@ import javax.persistence.Id;
 public class EventType {
     private @Id @GeneratedValue long id;
     private String eventType;
+
+    public long getId() {
+        return id;
+    }
+
+    public String getEventType() {
+        return eventType;
+    }
+
+    public EventType(@JsonProperty("eventType") String eventType) {
+        this.eventType = eventType;
+    }
 }
